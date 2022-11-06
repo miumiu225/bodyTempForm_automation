@@ -1,0 +1,24 @@
+
+
+====== WebDriver manager ======
+Current google-chrome version is 104.0.5112
+Get LATEST chromedriver version for 104.0.5112 google-chrome
+Trying to download new driver from https://chromedriver.storage.googleapis.com/104.0.5112.79/chromedriver_mac64.zip
+Driver has been saved in cache [/Users/miurayuuri/.wdm/drivers/chromedriver/mac64/104.0.5112.79]
+Traceback (most recent call last):
+  File "/Users/miurayuuri/python_cron/MYPY_001/gf_club_bt002.py", line 32, in <module>
+    driver = webdriver.Chrome(ChromeDriverManager().install())
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 76, in __init__
+    RemoteWebDriver.__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created
+from disconnected: not connected to DevTools
+  (Session info: chrome=104.0.5112.101)
+
