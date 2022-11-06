@@ -7,7 +7,7 @@ from selenium.webdriver.common.by import By
 import time
 import requests
 import random
-
+import my_info
 
 
 def click(xpath):
@@ -20,7 +20,7 @@ body_temp = str(36 + random.randint(3,8)/10)
 url = "https://docs.google.com/forms/d/e/1FAIpQLSdf1izu-_q93djsroEalN5iAp5JRwkBdPtO1npNWMl-xZhDXA/viewform?usp=pp_url"
 
 params = {
-    'entry.790589354':'三浦勇利',
+    'entry.790589354':my_info.info_name(),
     'entry.2145502044':body_temp,
     'entry.581723830':'なし',
     'entry.902848957':'なし',
